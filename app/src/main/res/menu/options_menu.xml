@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/info_page"
+            android:title="My Info Page" />
+        <item
+            android:id="@+id/favourites_control"
+            android:title="Favourite List Control" />
+        <item
+            android:id="@+id/back_to_login"
+            android:title="Back to Main Panel" />
+    </group>
+
+
+
+</menu>

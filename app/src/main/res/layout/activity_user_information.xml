@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/display_here"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold|italic"
+        android:background="@color/yellow"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_name"
+        android:textSize="15sp"
+        android:textColor="@color/blue"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_name2"
+        android:textSize="15sp"
+        android:textColor="@color/blue"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/text_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Age"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_name3"
+        android:textSize="15sp"
+        android:textColor="@color/blue"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/text_interest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Interests"/>
+
+    </LinearLayout>
+
