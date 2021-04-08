@@ -47,6 +47,8 @@
     <string name="article_description">Description</string>
     <string name="article_date">Article Date</string>
     <string name="article_link">Article Link</string>
+    <string name="welcome_message_2">My Favourites List</string>
+    <string name="Button_disFav">Display Favourites</string>
 
 
 </resources>

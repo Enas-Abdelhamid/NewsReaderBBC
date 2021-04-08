@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,17 +27,21 @@ import org.xmlpull.v1.XmlPullParserFactory;
 
 public class FavouritesControlActivity extends AppCompatActivity {
 
+    MyDBhelper dataBase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favourites_control);
 
+        dataBase = new MyDBhelper(this);
+
+
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            String value = extras.getString("key");
+            String valueFromHeadline = extras.getString("key");
             EditText link_edit = (EditText) findViewById(R.id.text_link);
-            link_edit.setText(value);
+            link_edit.setText(valueFromHeadline);
         }
     }
 
@@ -51,8 +56,36 @@ public class FavouritesControlActivity extends AppCompatActivity {
         }
 }
 
-    public void addToFavourites(View view) {
+    public void addToFavourites(View v) {
 
+        URL url;
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String value = extras.getString("key");
+            boolean enterMSG = dataBase.addData(value);
+            if(enterMSG==true){
+                Toast.makeText(this, "Message stored in Database", Toast.LENGTH_LONG).show();
+            }else{
+                Toast.makeText(this, "Unsuccessful Entry", Toast.LENGTH_LONG).show();
+            }
+        }
+
+
+        //--
+
+
+
+    }
+
+
+    public void displayFav(View view) {
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String valueFromFavChoice = extras.getString("key");
+            Intent i = new Intent(FavouritesControlActivity.this, FavouritesDisplayList.class);
+            i.putExtra("key", valueFromFavChoice);
+            startActivity(i);
+        }
 
     }
 
