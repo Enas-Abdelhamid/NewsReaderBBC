@@ -40,6 +40,13 @@
     <string name="guide_name2">Your Age</string>
     <string name="guide_name3">Your Interests</string>
     <string name="display_here">Thanks for Sharing Your Interests With Us</string>
+    <string name="Button_addFav">Add to Article My Favourite List</string>
+    <string name="Button_readArticle">Read The Article</string>
+    <string name="url_tag">Article Title</string>
+    <string name="article_title">Title</string>
+    <string name="article_description">Description</string>
+    <string name="article_date">Article Date</string>
+    <string name="article_link">Article Link</string>
 
 
 </resources>

@@ -38,13 +38,18 @@ public class HeadLinesActivity extends AppCompatActivity {
         headlines = new ArrayList<String>();
         hyperLinks = new ArrayList<String>();
 
+
+
         news_feed_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int index, long id) {
 
                 Uri newLink = Uri.parse(hyperLinks.get(index));
-                Intent intent = new Intent(Intent.ACTION_VIEW, newLink);
-                startActivity(intent);
+                Intent i = new Intent(HeadLinesActivity.this, FavouritesControlActivity.class);
+
+              i.putExtra("key",newLink.toString());
+                startActivity(i);
+
             }
         });
 
