@@ -39,9 +39,18 @@ public class FavouritesControlActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            String valueFromHeadline = extras.getString("key");
+            String valueFromHyperlink = extras.getString("urlkey");
+            String valueFromHeadline = extras.getString("titlekey");
+            String valueFromDates = extras.getString("datekey");
+            String valueFromDescription = extras.getString("descriptionkey");
             EditText link_edit = (EditText) findViewById(R.id.text_link);
-            link_edit.setText(valueFromHeadline);
+            link_edit.setText(valueFromHyperlink);
+            EditText title_edit = (EditText) findViewById(R.id.text_title);
+            title_edit.setText(valueFromHeadline);
+            EditText date_edit = (EditText) findViewById(R.id.text_date);
+            date_edit.setText(valueFromDates);
+            EditText description_edit = (EditText) findViewById(R.id.text_description);
+            description_edit.setText(valueFromDescription);
         }
     }
 
@@ -49,7 +58,7 @@ public class FavouritesControlActivity extends AppCompatActivity {
         URL url;
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            String value = extras.getString("key");
+            String value = extras.getString("urlkey");
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(value));
             startActivity(i);
@@ -61,7 +70,7 @@ public class FavouritesControlActivity extends AppCompatActivity {
         URL url;
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            String value = extras.getString("key");
+            String value = extras.getString("titlekey");
             boolean enterMSG = dataBase.addData(value);
             if(enterMSG==true){
                 Toast.makeText(this, "Message stored in Database", Toast.LENGTH_LONG).show();

@@ -26,7 +26,7 @@ public class HeadLinesActivity extends AppCompatActivity {
     /** Declaration of Variables.
      * @param headlines An  array of strings, each representing a single headline of the newsfeed.
      */
-    ArrayList<String> headlines, hyperLinks;
+    ArrayList<String> headlines, hyperLinks, articleDates, descriptionTexts;
     ListView news_feed_list;
 
     @Override
@@ -37,6 +37,8 @@ public class HeadLinesActivity extends AppCompatActivity {
 
         headlines = new ArrayList<String>();
         hyperLinks = new ArrayList<String>();
+        articleDates = new ArrayList<String>();
+        descriptionTexts = new ArrayList<String>();
 
 
 
@@ -45,9 +47,15 @@ public class HeadLinesActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int index, long id) {
 
                 Uri newLink = Uri.parse(hyperLinks.get(index));
+                String singleArticleTitle = (headlines.get(index));
+                String singleArticleDate = (articleDates.get(index));
+                String singleArticleDescription = (descriptionTexts.get(index));
                 Intent i = new Intent(HeadLinesActivity.this, FavouritesControlActivity.class);
 
-              i.putExtra("key",newLink.toString());
+              i.putExtra("urlkey",newLink.toString());
+              i.putExtra("titlekey",singleArticleTitle);
+                i.putExtra("datekey",singleArticleDate);
+                i.putExtra("descriptionkey",singleArticleDescription);
                 startActivity(i);
 
             }
@@ -117,6 +125,20 @@ public class HeadLinesActivity extends AppCompatActivity {
                             if (foundUnit)
                             {
                                 hyperLinks.add(xpp.nextText());
+                            }
+                        }
+                        else if (xpp.getName().equalsIgnoreCase("pubDate"))
+                        {
+                            if (foundUnit)
+                            {
+                                articleDates.add(xpp.nextText());
+                            }
+                        }
+                        else if (xpp.getName().equalsIgnoreCase("description"))
+                        {
+                            if (foundUnit)
+                            {
+                                descriptionTexts.add(xpp.nextText());
                             }
                         }
                     }
