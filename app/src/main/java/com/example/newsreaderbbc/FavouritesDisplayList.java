@@ -60,17 +60,24 @@ public class FavouritesDisplayList extends AppCompatActivity {
 
 
         //-----remove item
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int index, long id) {
+// ListView on item selected listener.
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
 
-                Bundle extras = getIntent().getExtras();
-                if (extras != null) {
-                    String valueFromFavChoice = extras.getString("titlekey");
-                    Intent i = new Intent(FavouritesDisplayList.this, deleteItemActivity.class);
-                    i.putExtra("titlekey", valueFromFavChoice);
-                    startActivity(i);
-                }
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                // TODO Auto-generated method stub
+
+                // Getting listview click value into String variable.
+                String articleTodelete = theList.get(position);
+
+                Intent intent = new Intent(FavouritesDisplayList.this, deleteItemActivity.class);
+
+                // Sending value to another activity using intent.
+                intent.putExtra("ChosenTitle", articleTodelete);
+
+                startActivity(intent);
 
             }
         });

@@ -24,7 +24,7 @@ public class deleteItemActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
           if (extras != null) {
-           String valueFromHeadline = extras.getString("titlekey");
+           String valueFromHeadline = extras.getString("ChosenTitle");
            EditText link_delete = (EditText) findViewById(R.id.chosen_title);
           link_delete.setText(valueFromHeadline);
          }
@@ -32,7 +32,7 @@ public class deleteItemActivity extends AppCompatActivity {
 
     public void deleteArticle(View view) {
         Bundle extras = getIntent().getExtras();
-        String valueFromHeadline = extras.getString("titlekey");
+        String valueFromHeadline = extras.getString("ChosenTitle");
         dataBase.deleteName(valueFromHeadline);
 
         Toast.makeText(deleteItemActivity.this, "Article removed from your Favourites!", Toast.LENGTH_LONG).show();
