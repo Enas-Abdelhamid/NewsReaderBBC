@@ -3,8 +3,12 @@ package com.example.newsreaderbbc;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListAdapter;
@@ -51,6 +55,26 @@ public class FavouritesDisplayList extends AppCompatActivity {
          }
        }
         //----DB
+
+
+
+
+        //-----remove item
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int index, long id) {
+
+                Bundle extras = getIntent().getExtras();
+                if (extras != null) {
+                    String valueFromFavChoice = extras.getString("titlekey");
+                    Intent i = new Intent(FavouritesDisplayList.this, deleteItemActivity.class);
+                    i.putExtra("titlekey", valueFromFavChoice);
+                    startActivity(i);
+                }
+
+            }
+        });
+        //-----remove item
 
 
 

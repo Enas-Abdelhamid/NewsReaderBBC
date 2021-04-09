@@ -90,9 +90,9 @@ public class FavouritesControlActivity extends AppCompatActivity {
     public void displayFav(View view) {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            String valueFromFavChoice = extras.getString("key");
+            String valueFromFavChoice = extras.getString("titlekey");
             Intent i = new Intent(FavouritesControlActivity.this, FavouritesDisplayList.class);
-            i.putExtra("key", valueFromFavChoice);
+            i.putExtra("titlekey", valueFromFavChoice);
             startActivity(i);
         }
 
