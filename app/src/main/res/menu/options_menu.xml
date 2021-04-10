@@ -4,13 +4,13 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/info_page"
-            android:title="My Info Page" />
+            android:title="@string/my_info_page" />
         <item
             android:id="@+id/favourites_control"
-            android:title="Other Platforms" />
+            android:title="@string/other_platforms" />
         <item
             android:id="@+id/back_to_login"
-            android:title="Back to Main Panel" />
+            android:title="@string/back_to_main_panel" />
     </group>
 
 

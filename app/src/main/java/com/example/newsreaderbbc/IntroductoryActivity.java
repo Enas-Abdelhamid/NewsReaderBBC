@@ -78,7 +78,7 @@ public class IntroductoryActivity extends AppCompatActivity
             //return true;
         }
         else if (id == R.id.choicethree) {
-            Toast.makeText(IntroductoryActivity.this, "Help Option!", Toast.LENGTH_LONG).show();
+           // Toast.makeText(IntroductoryActivity.this, "Help Option!", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(IntroductoryActivity.this, HelpActivity.class);
             startActivity(intent);
         }

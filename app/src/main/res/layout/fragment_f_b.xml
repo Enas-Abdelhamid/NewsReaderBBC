@@ -16,7 +16,7 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Link for BBC on Facebook;"
+        android:text="@string/linkfbplatform"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         android:gravity="center_horizontal"/>
@@ -32,7 +32,7 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="https://www.facebook.com/bbc"
+        android:text="@string/linkonfb"
         android:textSize="15sp"
         android:textStyle="bold|italic"
         android:gravity="center_horizontal"

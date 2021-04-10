@@ -16,7 +16,7 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Link for BBC on Twitter;"
+        android:text="@string/link_twit"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         android:gravity="center_horizontal"
@@ -33,7 +33,7 @@
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="https://twitter.com/bbcworld?lang=en"
+        android:text="@string/linkontwit"
         android:textSize="15sp"
         android:textStyle="bold|italic"
         android:gravity="center_horizontal"/>

@@ -10,26 +10,14 @@
     <string name="ButtonText">Log In</string>
     <string name="username">Enter your user name :</string>
     <string name="password">Enter your password:</string>
-    <string name="ButtonText2">Receive</string>
-    <string name="currenTemp">current</string>
-    <string name="minTemp">min</string>
-    <string name="maxTemp">max</string>
-    <string name="uvRating">uv</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Message Here</string>
-    <string name="idMSG">ID = </string>
-    <string name="myCheck">Is a Send Message</string>
-    <string name="delete">Do you want to delete this?</string>
-    <string name="database">The id in the database is: </string>
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="row">The selected row is: </string>
+
+
 
     <string name="title_activity_navigation_example">NavigationExample</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="nav_header_subtitle">enas.flower@android.com</string>
+    
     <string name="Button1">Save My Info!</string>
     <string name="Button2"> Next >>> </string>
     <string name="tell_us">Share Your Interests with Us!</string>
@@ -55,6 +43,29 @@
     <string name="my_fav_articles">Your Facourite Articles List</string>
     <string name="click_article_move_to_detail">Click on any Article to Check its Details</string>
     <string name="welcome_message_3">For DELETING any of these articles from your favourite list, click on it, and then press \"delete\" button.</string>
+    <string name="txt1">The user can add an article to favourites list, he or she can also remove any item by clicking the item and then pressing the delete button.</string>
+    <string name="txt2">Add or Delete Item From Favourites</string>
+    <string name="txt3">This activity displays the whole feed from the BBC RSS, upon clicking any item or article, the user is being directed to a page with article details including (title, description, date and link), and options to read the article and add it to favourites list</string>
+    <string name="txt4">HeadLines Activity</string>
+    <string name="txt5">The second option in the Navigation guides user to links of BBC on other platforms, by pressing the proper button, the matching fragment is being loaded for either FB or Twitter</string>
+    <string name="txt6">Other Platforms</string>
+    <string name="txt7">The user information (Name, Age, Interests) are being entered in the very first page of the APP and stored via Shared Preferences, it is being displayed again upon choosing the option of My-Info-Page from the Navigation in the second page</string>
+    <string name="txt8">User Interests on First Page</string>
+    <string name="choice_1">Choice 1</string>
+    <string name="choice_2">Choice 2</string>
+    <string name="choice_3">Choice 3</string>
+    <string name="my_info_page">My Info Page</string>
+    <string name="other_platforms">Other Platforms</string>
+    <string name="back_to_main_panel">Back to Main Panel</string>
+    <string name="link_twit">Link for BBC on Twitter;</string>
+    <string name="linkontwit">https://twitter.com/bbcworld?lang=en</string>
+    <string name="linkonfb">https://www.facebook.com/bbc</string>
+    <string name="linkfbplatform">Link for BBC on Facebook;</string>
+    <string name="your_interests_hint">Your Interests</string>
+    <string name="your_age_hint">Your Age</string>
+    <string name="your_name_hint">Your Name</string>
+    <string name="followfb">Follow BBC on Facebook</string>
+    <string name="followtwit">Follow BBC on Twitter</string>
 
 
 </resources>

@@ -30,7 +30,7 @@
         android:id="@+id/text_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Your Name"/>
+        android:hint="@string/your_name_hint"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         android:id="@+id/text_age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Your Age"/>
+        android:hint="@string/your_age_hint"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -58,7 +58,7 @@
         android:id="@+id/text_interest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Your Interests"/>
+        android:hint="@string/your_interests_hint"/>
 
     </LinearLayout>
 

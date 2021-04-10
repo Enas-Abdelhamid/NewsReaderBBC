@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">قارئ الأخبار</string>
+    <string name="welcome_message">ابق على اطلاع بآخر الأخبار من بي بي سي!</string>
+    <string name="ButtonText1">تحقق من الأخبار</string>
+    <string name="action_settings">إعدادات الإجراءات</string>
+    <string name="nav_header_desc">وصفى</string>
+    <string name="nav_header_title">ملفي</string>
+
+    <string name="hello_message">مرحبا بكم في التطبيق الخاص بي!</string>
+    <string name="ButtonText">تسجيل الدخول</string>
+    <string name="username">أدخل اسم المستخدم الخاص بك:</string>
+    <string name="password">ادخل رقمك السري:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+
+    <string name="title_activity_navigation_example">مثال على التنقل</string>
+    <string name="navigation_drawer_open">افتح درج التنقل</string>
+    <string name="navigation_drawer_close">أغلق درج التنقل</string>
+
+
+    <string name="Button1">احفظ معلوماتي!</string>
+    <string name="Button2"> التالي >>> </string>
+    <string name="tell_us">شارك اهتماماتك معنا!</string>
+    <string name="welcome_here">مرحبًا بك في تطبيق بي بي سي نيوز</string>
+    <string name="keep_updated">كن أول من يعرف!</string>
+    <string name="main_pic">الصورة الرئيسية</string>
+    <string name="guide_name">الاسم بالكامل :</string>
+    <string name="guide_name2">عمرك</string>
+    <string name="guide_name3">اهتماماتك</string>
+    <string name="display_here">نشكرك على مشاركة اهتماماتك معنا</string>
+    <string name="Button_addFav">أضف هذا المقال إلى قائمة المفضلة</string>
+    <string name="Button_readArticle">اقرأ المقال على موقع بي بي سي</string>
+    <string name="url_tag">عنوان المقال</string>
+    <string name="article_title">لقب</string>
+    <string name="article_description">وصف</string>
+    <string name="article_date">تاريخ المقال</string>
+    <string name="article_link">رابط المقال</string>
+    <string name="welcome_message_2">قائمة المفضلة</string>
+    <string name="Button_disFav">عرض قائمة المفضلة</string>
+    <string name="article_head">المادة المختارة</string>
+    <string name="Button_delete">حذف المادة من قائمة المفضلة</string>
+    <string name="follow">بي بي سي على منصات أخرى</string>
+    <string name="my_fav_articles">قائمة مقالاتك المفضلة</string>
+    <string name="click_article_move_to_detail">انقر فوق أي مقال للتحقق من تفاصيله</string>
+    <string name="welcome_message_3"> لحذف أي من هذه المقالات من قائمتك المفضلة ، انقر عليها ، ثم اضغط على الزر حذف  </string>
+    <string name="txt1">يمكن للمستخدم إضافة مقال إلى قائمة المفضلة ، ويمكنه أيضًا إزالة أي عنصر عن طريق النقر فوق العنصر ثم الضغط على زر الحذف.</string>
+    <string name="txt2">إضافة أو حذف عنصر من المفضلة</string>
+    <string name="txt3">يعرض هذا النشاط الخلاصة الكاملة من BBC RSS ، عند النقر فوق أي عنصر أو مقالة ، يتم توجيه المستخدم إلى صفحة تحتوي على تفاصيل المقالة بما في ذلك (العنوان والوصف والتاريخ والرابط) ، وخيارات قراءة المقالة وإضافتها إلى قائمة المفضلة</string>
+    <string name="txt4">نشاط الخطوط الرئيسية</string>
+    <string name="txt5">الخيار الثاني في التنقل يوجه المستخدم إلى روابط BBC على منصات أخرى ، بالضغط على الزر المناسب ، يتم تحميل الجزء المطابق إما لـ FB أو Twitter</string>
+    <string name="txt6">منصات أخرى</string>
+    <string name="txt7">تم إدخال معلومات المستخدم (الاسم والعمر والاهتمامات) في الصفحة الأولى من التطبيق وتخزينها عبر التفضيلات المشتركة ، ويتم عرضها مرة أخرى عند اختيار خيار  من التنقل في الصفحة الثانية</string>
+    <string name="txt8">اهتمامات المستخدم في الصفحة الأولى</string>
+    <string name="choice_1">الاختيار 1</string>
+    <string name="choice_2">الاختيار 2</string>
+    <string name="choice_3">الاختيار 3</string>
+    <string name="my_info_page">صفحة المعلومات الخاصة بي</string>
+    <string name="other_platforms">منصات أخرى</string>
+    <string name="back_to_main_panel">العودة إلى اللوحة الرئيسية</string>
+    <string name="link_twit">رابط بي بي سي على تويتر</string>
+    <string name="linkontwit">https://twitter.com/bbcworld?lang=en</string>
+    <string name="linkonfb">https://www.facebook.com/bbc</string>
+    <string name="linkfbplatform">رابط لـ BBC على Facebook</string>
+    <string name="your_interests_hint">اهتماماتك</string>
+    <string name="your_age_hint">عمرك</string>
+    <string name="your_name_hint">اسمك</string>
+    <string name="followfb">تابع بي بي سي على فيسبوك</string>
+    <string name="followtwit">تابع بي بي سي على تويتر</string>
+
+
+</resources>

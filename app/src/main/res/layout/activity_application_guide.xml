@@ -24,7 +24,7 @@
         android:layout_alignParentTop = "true"
         android:layout_centerHorizontal = "true"
         android:layout_marginTop = "27dp"
-        android:text = "Follow BBC on Facebook"/>
+        android:text = "@string/followfb"/>
     <Button
         android:id = "@+id/fragment2"
         android:layout_width = "wrap_content"
@@ -32,7 +32,7 @@
         android:layout_alignParentTop = "true"
         android:layout_centerHorizontal = "true"
         android:layout_marginTop = "27dp"
-        android:text = "Follow BBC on Twitter"/>
+        android:text = "@string/followtwit"/>
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
