@@ -64,12 +64,24 @@
         />
 
 
+
+
+    <Button
+        android:id="@+id/readTheArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Button_readArticle"
+        android:layout_marginLeft="50dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="readArticle"/>
     <Button
         android:id="@+id/button_addToFav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Button_addFav"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="30dp"
         android:gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
@@ -79,21 +91,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Button_disFav"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="90dp"
         android:gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:onClick="displayFav"/>
-    <Button
-        android:id="@+id/readTheArticle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Button_readArticle"
-        android:layout_marginLeft="130dp"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:onClick="readArticle"/>
 
 
 </LinearLayout>

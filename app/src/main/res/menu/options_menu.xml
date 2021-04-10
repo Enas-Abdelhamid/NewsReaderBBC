@@ -7,7 +7,7 @@
             android:title="My Info Page" />
         <item
             android:id="@+id/favourites_control"
-            android:title="Application Guide" />
+            android:title="Other Platforms" />
         <item
             android:id="@+id/back_to_login"
             android:title="Back to Main Panel" />

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Interests on First Page"
+        android:textSize="20sp"
+        android:textColor="#D35400"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The user information (Name, Age, Interests) are being entered in the very first page of the APP and stored via Shared Preferences, it is being displayed again upon choosing the option of My-Info-Page from the Navigation in the second page "
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other Platforms"
+        android:textSize="20sp"
+        android:textColor="#D35400"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The second option in the Navigation guides user to links of BBC on other platforms, by pressing the proper button, the matching fragment is being loaded for either FB or Twitter"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HeadLines Activity"
+        android:textSize="20sp"
+        android:textColor="#D35400"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This activity displays the whole feed from the BBC RSS, upon clicking any item or article, the user is being directed to a page with article details including (title, description, date and link), and options to read the article and add it to favourites list"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add or Delete Item From Favourites"
+        android:textSize="20sp"
+        android:textColor="#D35400"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The user can add an article to favourites list, he or she can also remove any item by clicking the item and then pressing the delete button."
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        />
+    </LinearLayout>
+

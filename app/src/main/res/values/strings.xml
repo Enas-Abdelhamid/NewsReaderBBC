@@ -40,18 +40,21 @@
     <string name="guide_name2">Your Age</string>
     <string name="guide_name3">Your Interests</string>
     <string name="display_here">Thanks for Sharing Your Interests With Us</string>
-    <string name="Button_addFav">Add to Article My Favourite List</string>
-    <string name="Button_readArticle">Read The Article</string>
+    <string name="Button_addFav">Add this Article To My Favourites List</string>
+    <string name="Button_readArticle">Read The Article on BBC Website</string>
     <string name="url_tag">Article Title</string>
     <string name="article_title">Title</string>
     <string name="article_description">Description</string>
     <string name="article_date">Article Date</string>
     <string name="article_link">Article Link</string>
     <string name="welcome_message_2">My Favourites List</string>
-    <string name="Button_disFav">Display Favourites</string>
+    <string name="Button_disFav">Display Favourites List</string>
     <string name="article_head">Chosen Article</string>
     <string name="Button_delete">Delete Article From Favourites List</string>
     <string name="follow">BBC on Other Platforms</string>
+    <string name="my_fav_articles">Your Facourite Articles List</string>
+    <string name="click_article_move_to_detail">Click on any Article to Check its Details</string>
+    <string name="welcome_message_3">For DELETING any of these articles from your favourite list, click on it, and then press \"delete\" button.</string>
 
 
 </resources>

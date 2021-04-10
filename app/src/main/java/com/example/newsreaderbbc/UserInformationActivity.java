@@ -6,11 +6,13 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class UserInformationActivity extends AppCompatActivity {
 
-    /** Declaration of Variables.
+    /**
+     * Declaration of Variables.
      * User sharing his or her Name, Age and Interests are going to be stored using
      * shared preferences
      */
@@ -26,12 +28,11 @@ public class UserInformationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_information);
-    }
 
-    public void displayMyPreferences(View view) {
-        userName = (TextView) findViewById(R.id.text_name);
-        age = (TextView) findViewById(R.id.text_age);
-        interests = (TextView) findViewById(R.id.text_interest);
+
+        userName = (EditText) findViewById(R.id.text_name);
+        age = (EditText) findViewById(R.id.text_age);
+        interests = (EditText) findViewById(R.id.text_interest);
         sharedInterestsPreferences = getSharedPreferences(prefSet,
                 Context.MODE_PRIVATE);
 
