@@ -11,7 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsReaderBBC">
-        <activity android:name=".FavouritesControlActivity"></activity>
+        <activity android:name=".HelpActivity"></activity>
+        <activity android:name=".MyFavouritesList" />
+        <activity android:name=".ApplicationGuide" />
+        <activity android:name=".deleteItemActivity" />
+        <activity android:name=".FavouritesDisplayList" />
+        <activity android:name=".FavouritesControlActivity" />
         <activity android:name=".UserInformationActivity" />
         <activity android:name=".IntroductoryActivity" />
         <activity android:name=".HeadLinesActivity" />

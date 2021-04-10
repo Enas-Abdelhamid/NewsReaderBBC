@@ -14,6 +14,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
+/** This activity implements navigation features by handling navigation drawers and toolbars
+ */
 
 public class IntroductoryActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -73,10 +75,14 @@ public class IntroductoryActivity extends AppCompatActivity
         }
         else if (id == R.id.choicetwo) {
             Toast.makeText(IntroductoryActivity.this, "Favourites List!", Toast.LENGTH_LONG).show();
-            return true;
+            Intent intent = new Intent(IntroductoryActivity.this, MyFavouritesList.class);
+            startActivity(intent);
+            //return true;
         }
         else if (id == R.id.choicethree) {
-            Toast.makeText(IntroductoryActivity.this, "Help Option!", Toast.LENGTH_LONG).show();
+           // Toast.makeText(IntroductoryActivity.this, "Help Option!", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(IntroductoryActivity.this, HelpActivity.class);
+            startActivity(intent);
         }
         
 
@@ -94,7 +100,7 @@ public class IntroductoryActivity extends AppCompatActivity
 
 
         } else if (id == R.id.favourites_control) {
-            Intent resultIntent = new Intent(IntroductoryActivity.this, FavouritesControlActivity.class);
+            Intent resultIntent = new Intent(IntroductoryActivity.this, ApplicationGuide.class);
             startActivity(resultIntent);
 
         } else if (id == R.id.back_to_login) {

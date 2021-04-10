@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt8"
+        android:textSize="20sp"
+        android:textColor="#D35400"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt7"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt6"
+        android:textSize="20sp"
+        android:textColor="#D35400"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt5"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt4"
+        android:textSize="20sp"
+        android:textColor="#D35400"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt3"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt2"
+        android:textSize="20sp"
+        android:textColor="#D35400"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt1"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        />
+    </LinearLayout>
+
