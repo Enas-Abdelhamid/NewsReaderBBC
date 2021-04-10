@@ -10,16 +10,15 @@ import android.widget.Toast;
 
 public class FBFragment extends Fragment {
 
-
+    /** This is the fragment in which the data of BBC on the FB platform is diplayed and is invoked by
+     * FB button press on the ApplicationGuide activity
+     */
     View view;
-    Button firstButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_f_b, container, false);
-        // get the reference of Button
 
                 Toast.makeText(getActivity(), "First Fragment - BBC on Facebook", Toast.LENGTH_LONG).show();
 

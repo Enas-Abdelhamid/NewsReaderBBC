@@ -9,6 +9,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+/** This activity displays the data stored in shared preferences, these data was entered in the very
+ * first page of the application
+ */
+
 public class UserInformationActivity extends AppCompatActivity {
 
     /**

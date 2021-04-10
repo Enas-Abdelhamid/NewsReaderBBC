@@ -35,13 +35,17 @@ public class HeadLinesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_head_lines);
         news_feed_list = (ListView) findViewById(R.id.news_list);
 
+        /** creating array for each attribute of articles
+         */
         headlines = new ArrayList<String>();
         hyperLinks = new ArrayList<String>();
         articleDates = new ArrayList<String>();
         descriptionTexts = new ArrayList<String>();
 
 
-
+/** Upon a click of any article on the headlies list, this activity
+ * starts another activity that displays the details of the chosen article
+ */
         news_feed_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int index, long id) {
@@ -52,6 +56,8 @@ public class HeadLinesActivity extends AppCompatActivity {
                 String singleArticleDescription = (descriptionTexts.get(index));
                 Intent i = new Intent(HeadLinesActivity.this, FavouritesControlActivity.class);
 
+                /** Passing the chosen article details to the next activity
+                 */
               i.putExtra("urlkey",newLink.toString());
               i.putExtra("titlekey",singleArticleTitle);
                 i.putExtra("datekey",singleArticleDate);
@@ -91,8 +97,11 @@ public class HeadLinesActivity extends AppCompatActivity {
             super.onPreExecute();
 
 
-
         }
+
+
+        /** Parsing the details of articles from the rss newsfeed of BBC using the XmlPullParser
+         */
 
         @Override
         protected String doInBackground(Integer... integers) {
@@ -117,6 +126,8 @@ public class HeadLinesActivity extends AppCompatActivity {
                         {
                             if (foundUnit)
                             {
+                                /** Adding parsed titles to the headlines array
+                                 */
                                 headlines.add(xpp.nextText());
                             }
                         }
@@ -124,6 +135,8 @@ public class HeadLinesActivity extends AppCompatActivity {
                         {
                             if (foundUnit)
                             {
+                                /** Adding parsed links to the hyperlinks array
+                                 */
                                 hyperLinks.add(xpp.nextText());
                             }
                         }
@@ -131,6 +144,8 @@ public class HeadLinesActivity extends AppCompatActivity {
                         {
                             if (foundUnit)
                             {
+                                /** Adding parsed publishing dates to the articleDates array
+                                 */
                                 articleDates.add(xpp.nextText());
                             }
                         }
@@ -138,6 +153,8 @@ public class HeadLinesActivity extends AppCompatActivity {
                         {
                             if (foundUnit)
                             {
+                                /** Adding parsed descriptions to the description array
+                                 */
                                 descriptionTexts.add(xpp.nextText());
                             }
                         }
@@ -165,7 +182,9 @@ public class HeadLinesActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-
+            /** setting the listView adapter after execution of parsing
+             * and transferring data to arrays
+             */
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(HeadLinesActivity.this, android.R.layout.simple_list_item_1, headlines);
             news_feed_list.setAdapter(adapter);
 

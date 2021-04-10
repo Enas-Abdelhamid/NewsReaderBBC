@@ -25,6 +25,10 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
+/** this activity displays the details of the article chosen from the previous activity
+ * it also gives the user the option to go read article directly from BBC, add it to
+ * favourites list, and also display the favourites list.
+ */
 public class FavouritesControlActivity extends AppCompatActivity {
 
     MyDBhelper dataBase;
@@ -36,7 +40,9 @@ public class FavouritesControlActivity extends AppCompatActivity {
 
         dataBase = new MyDBhelper(this);
 
-
+/** getting the values of a single article details using the getString method, and
+ * in turn assigning the values of these details to the editText boxes in the layout.
+ */
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String valueFromHyperlink = extras.getString("urlkey");
@@ -54,6 +60,9 @@ public class FavouritesControlActivity extends AppCompatActivity {
         }
     }
 
+    /** this method directs the user to read the article directly from BBC platform
+     * and is invoked by the press of the read button.
+     */
     public void readArticle(View view) {
         URL url;
         Bundle extras = getIntent().getExtras();
@@ -65,17 +74,21 @@ public class FavouritesControlActivity extends AppCompatActivity {
         }
 }
 
+    /** this method is invoked by the add article to favourite list button.
+     */
     public void addToFavourites(View v) {
-
-        URL url;
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String value = extras.getString("titlekey");
+
+            /** the method itself calls the addData method which is embedded in the MyDBhelper
+             * java class that adds data to the sqlite database .
+             */
             boolean enterMSG = dataBase.addData(value);
             if(enterMSG==true){
                 Toast.makeText(this, "Message stored in Database", Toast.LENGTH_LONG).show();
             }else{
-                Toast.makeText(this, "Unsuccessful Entry", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Error", Toast.LENGTH_LONG).show();
             }
         }
 
@@ -86,7 +99,9 @@ public class FavouritesControlActivity extends AppCompatActivity {
 
     }
 
-
+    /** this method loads data from the sqlite
+     * database and updates the favourites listview accordingly.
+     */
     public void displayFav(View view) {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {

@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
 
+/** Activity that displays help tips for how to use different features of the app
+ */
 public class HelpActivity extends AppCompatActivity {
 
     @Override

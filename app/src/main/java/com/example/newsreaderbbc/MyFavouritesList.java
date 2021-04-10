@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+/** This activity only is for displaying the items in the favourites listview
+ */
 public class MyFavouritesList extends AppCompatActivity {
     MyDBhelper database;
     @Override

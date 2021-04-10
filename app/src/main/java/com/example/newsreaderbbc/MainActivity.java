@@ -66,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /** Function to store the sharedpreferences data
+    /** Function to store the sharedpreferences data, it will be displayed on next run
+     * attempts till they are changed by user
      */
     public void storeMyPreferences(View view) {
         String un = userName.getText().toString();

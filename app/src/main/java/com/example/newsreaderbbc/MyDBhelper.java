@@ -6,7 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-
+/** Database helper that contains embedded functions to add and delete data from sqlite database
+ * that stores the articles titles of the favourite list
+ */
 public class MyDBhelper extends SQLiteOpenHelper {
 
     public static final String databaseName = "newsReader.db";

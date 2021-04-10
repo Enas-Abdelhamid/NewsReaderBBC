@@ -14,6 +14,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
+/** This activity implements navigation features by handling navigation drawers and toolbars
+ */
 
 public class IntroductoryActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

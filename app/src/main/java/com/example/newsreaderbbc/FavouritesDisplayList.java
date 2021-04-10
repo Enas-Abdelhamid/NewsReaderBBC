@@ -1,22 +1,22 @@
 package com.example.newsreaderbbc;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
+/** this activity displays the favourites listview , and guides the user on how to delete
+ * any favourite item, by clicking the article title and then moving to the next delete activity.
+ */
 public class FavouritesDisplayList extends AppCompatActivity {
 
     MyDBhelper database;
@@ -28,7 +28,7 @@ public class FavouritesDisplayList extends AppCompatActivity {
         setContentView(R.layout.activity_favourites_display_list);
 
 
-        //Check if importing link from previous activity is successful
+        //This is for me to Check if importing link from previous activity is successful
        // Bundle extras = getIntent().getExtras();
       //  if (extras != null) {
          //   String valueFromHeadline = extras.getString("key");
@@ -38,7 +38,7 @@ public class FavouritesDisplayList extends AppCompatActivity {
 
 
 
-        //----DB
+        //----DB - Loading data from sqlite database to update the listview
        ListView listView = (ListView) findViewById(R.id.news_fav_list);
         database = new MyDBhelper(this);
 
@@ -46,7 +46,7 @@ public class FavouritesDisplayList extends AppCompatActivity {
       ArrayList<String> theList = new ArrayList<>();
      Cursor data = database.getListContents();
      if(data.getCount() == 0){
-     Toast.makeText(this, "List is Empty Now",Toast.LENGTH_LONG).show();
+     Toast.makeText(this, "Emptized",Toast.LENGTH_LONG).show();
      }else{
          while(data.moveToNext()){
         theList.add(data.getString(1));
@@ -60,21 +60,20 @@ public class FavouritesDisplayList extends AppCompatActivity {
 
 
         //-----remove item
-// ListView on item selected listener.
+/**upon the click of any article, this activity starts another activity that gives the user
+ * the option to delete the article from favourites list
+ */
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                // TODO Auto-generated method stub
 
-                // Getting listview click value into String variable.
                 String articleTodelete = theList.get(position);
 
                 Intent intent = new Intent(FavouritesDisplayList.this, deleteItemActivity.class);
 
-                // Sending value to another activity using intent.
                 intent.putExtra("ChosenTitle", articleTodelete);
 
                 startActivity(intent);
