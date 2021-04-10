@@ -94,7 +94,7 @@ public class IntroductoryActivity extends AppCompatActivity
 
 
         } else if (id == R.id.favourites_control) {
-            Intent resultIntent = new Intent(IntroductoryActivity.this, FavouritesControlActivity.class);
+            Intent resultIntent = new Intent(IntroductoryActivity.this, ApplicationGuide.class);
             startActivity(resultIntent);
 
         } else if (id == R.id.back_to_login) {
