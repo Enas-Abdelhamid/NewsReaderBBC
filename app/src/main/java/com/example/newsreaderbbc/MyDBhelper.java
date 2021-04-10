@@ -11,7 +11,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class MyDBhelper extends SQLiteOpenHelper {
 
-    public static final String databaseName = "newsReader.db";
+    public static final String databaseName = "newsReaderbbc.db";
     public static final String tableName = "favourite_articles";
     public static final String column1 = "articleID";
     public static final String column2 = "articleURL";

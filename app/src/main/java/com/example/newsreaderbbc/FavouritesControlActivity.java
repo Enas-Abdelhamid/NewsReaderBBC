@@ -86,7 +86,7 @@ public class FavouritesControlActivity extends AppCompatActivity {
              */
             boolean enterMSG = dataBase.addData(value);
             if(enterMSG==true){
-                Toast.makeText(this, "Message stored in Database", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Article stored in Your Favourites List", Toast.LENGTH_LONG).show();
             }else{
                 Toast.makeText(this, "Error", Toast.LENGTH_LONG).show();
             }
