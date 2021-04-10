@@ -14,6 +14,8 @@ public class HelpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
+        /** Snackbar is implemented here
+         */
         Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "You are now reading HELP tips", Snackbar.LENGTH_LONG);
         snackbar.show();
     }
